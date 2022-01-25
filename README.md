@@ -3,7 +3,7 @@ This is a Python project
 
 ## Description
 
-This project aims to be a quick and simple way to send webhooks to webhook receivers with pre-established messages. It also works well when imported via another Python project that would deal with business logic and calling the sender using 'os.system'
+This project aims to be a quick and simple way to send webhooks to webhook receivers with pre-established messages. It also works well when imported via another Python project that would deal with business logic and calling the sender using `os.system`
 
 This Webhook sender allows two modes of sending HTTP messages in JSON: 
 
@@ -17,15 +17,15 @@ Further modifications allowing connection to Database are on the plans. These mo
 ## Getting started 
 The simplest way to use it, for testing, is straight from the terminal. Open up the terminal inside the project's home directory and activate the virtual environment:
 
-'''bash
+```bash
 source venv/bin/activate
-'''
+``` 
 
-Install dependencies declared in 'requirements.txt' by using:
+Install dependencies declared in `requirements.txt` by using:
 
-'''bash
+```bash
 pip3 install -r requirements.txt
-'''
+```
 
 ## How to use it
 Next, run the Python script:
@@ -35,15 +35,15 @@ Run the Webhook receiver. If it is built on top of Flask, it will probably have 
 
 With the Flask receiver, no URL is needed to be passed. Simply run, in the terminal:
 
-'''bash
+```bash
 python webhook\_sender.py
-'''
+```
 
 Now, check the terminal that runs the receiver, the JSON message should appear there, containing the hardcoded message.
 
 2. To the specified URL
-Simply paste the URL to be connected to after the '-u' or '--url' flag:
+Simply paste the URL to be connected to after the `-u` or `--url` flag:
 
-'''bash
+```bash
 python webhook\_sender.py --url \<insert URL here>
-'''
+```
