@@ -36,7 +36,7 @@ Run the Webhook receiver. If it is built on top of Flask, it will probably have 
 With the Flask receiver, no URL is needed to be passed. Simply run, in the terminal:
 
 ```bash
-python webhook\_sender.py
+python webhook_sender.py
 ```
 
 Now, check the terminal that runs the receiver, the JSON message should appear there, containing the hardcoded message.
@@ -45,5 +45,5 @@ Now, check the terminal that runs the receiver, the JSON message should appear t
 Simply paste the URL to be connected to after the `-u` or `--url` flag:
 
 ```bash
-python webhook\_sender.py --url \<insert URL here>
+python webhook_sender.py --url <insert URL here>
 ```
